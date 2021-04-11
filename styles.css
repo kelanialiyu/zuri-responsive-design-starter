@@ -349,163 +349,89 @@ div.footer h6 {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     div.nav-bar {
-        display: flex;
+        display: grid;
         padding: 1rem 1rem;
     }
 
     div.logo {
         font-size: 2rem;
     }
-
+    div .logo img{
+        width:2rem;
+        height: 1.5rem;
+    }
+    div .logo button{
+        margin-right:2px;
+        padding:1px;
+        outline: none;
+        border:none;
+        background-color: #bcc3c7;
+    }
     ul.nav-links {
-        display: none;
+        display: table-caption;
     }
 
     ul li {
-        margin: 0 2vw;
+        margin: 2vw 2vw;
+        height: 1.5rem;
     }
 
     ul li a {
-        padding: 0.5vw;
+        padding: 1vw;
     }
-
+    
     div.hero-section {
-        background: #304353;
-        padding: 3rem;
+        display: none;
     }
-
-    div.hero-content-heading {
-        text-align: center;
-    }
-
-    div.hero-content-heading h3 {
-        font-size: 2rem;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-weight: 300;
-        color: #bcc3c7;
-    }
-
-    div.hero-content-heading p {
-        text-align: center;
-        padding-top: 0.7rem;
-        color: #88949B;
-        font-size: 1rem;
-        letter-spacing: 2px;
-        font-weight: 300;
-    }
-
-    div.hero-content-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 2rem;
-    }
-
-    div.hero-content-btn a {
-        background: #E44C65;
-        text-decoration: none;
-        color: #bcc3c7;
-        font-size: 0.9rem;
-        padding: 10px 30px;
-        border-radius: 3px;
-        letter-spacing: 2px;
-    }
-
     div.hero-background {
-        background: #f0f0f0;
-        padding: 10rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 1rem;
     }
 
     div.background {
-        background: #fff;
-        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
-        padding: 15px 40px;
-        width: 550px;
-        height: 220px;
-        position: relative;
-    }
-
-    div.background h4 {
-        padding: 2rem;
-        color: #555657;
-        font-size: 1rem;
-        letter-spacing: 2px;
-        text-transform: uppercase;
+        padding: 3px 8px;
+        width: calc(100vw - 70px);
+        height: calc(650px - 90vw);
     }
 
     div.background p {
-        color: #A6A5AA;
-        padding-left: 2rem;
-        font-size: 0.8rem;
-        letter-spacing: 2px;
+        padding-right: 1rem;
     }
 
     div.hero-background-pos {
-        position: absolute;
-        right: 0px;
-        left: 66%;
+        left:calc(100% - 60px);
         background: #fff;
-        width: 140px;
-        height: 140px;
-        border-radius: 50%;
-        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+        width: 60px;
+        height: 60px;
     }
-
-    div.snapshot-team {
-        background: #f0f0f0;
-        text-align: center;
-        padding-top: 2rem;
-    }
-
-    div.snapshot-team h2 {
-        color: #555657;
-        font-size: 1.5rem;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-    }
-
-    div.snapshot-team p {
-        color: #A6A5AA;
-        font-size: 1rem;
-        letter-spacing: 2px;
-        padding-top: 0.8rem;
-    }
-
     div.snapshot-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #f0f0f0;
-        padding: 4rem 6rem;
+        padding: 2rem 6rem;
+    }
+    div.snapshot-team {
+        padding-left:2px;
+        padding-right: 2px;
     }
 
     div.snapshot-box-content {
-        display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     div.box1 {
-        background: #fff;
-        padding: 10px 20px;
-        width: 220px;
-        height: 230px;
-        margin: 10px;
-        border-radius: 2px;
-        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+        padding: 10px 10px;
+        width: calc(90% - 20px);
+        min-width: 250px;
+        margin: 5px;
+        border-radius: 1px;
+        height: 250px;
     }
 
     div.box3 {
         background: #304353;
-        padding: 10px 20px;
-        width: 220px;
-        height: 230px;
-        margin: 10px;
-        border-radius: 2px;
-        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+        padding: 10px 10px;
+        width: calc(90% - 20px);
+        min-width: 250px;
+        height: 250px;
+        margin: 5px;
+        border-radius: 1px;
     }
 
     div.box3 h5 {
@@ -535,7 +461,7 @@ div.footer h6 {
 
     div.gallery-section {
         background: #fff;
-        padding: 4rem;
+        padding: 2rem 4rem;
     }
 
     div.gallery-content {
@@ -596,34 +522,17 @@ div.footer h6 {
     }
 
     div.footer-input {
-        display: flex;
+        display: block;
         justify-content: center;
         align-items: center;
-        padding-top: 3rem;
+        padding-top: 1rem;
     }
 
-    input[type="text"] {
-        margin-right: 10px;
-        padding: 10px 20px;
-        width: 25%;
-        outline: none;
-        border: 1px solid #bcc3c7;
-        background: transparent;
-        color: #f0f0f0;
-        font-size: 1rem;
-        border-radius: 2px;
-    }
-
-    input[type="email"] {
-        margin-right: 10px;
-        padding: 10px 20px;
-        width: 25%;
-        outline: none;
-        border: 1px solid #bcc3c7;
-        background: transparent;
-        color: #f0f0f0;
-        font-size: 1rem;
-        border-radius: 2px;
+    input[type="text"],input[type="email"] {
+        margin:none;
+        margin: 5px;
+        padding: 5px 10px;
+        width: calc(100% - 10px);
     }
 
     ::placeholder {
@@ -634,24 +543,19 @@ div.footer h6 {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 2rem;
+        padding-top: 0.6rem;
     }
 
     textarea {
-        width: 51%;
+        width: calc(100% - 5px);
         height: 150px;
-        padding: 0.5rem;
-        outline: none;
-        border: 1px solid #bcc3c7;
-        background: transparent;
-        color: #f0f0f0;
     }
 
     div.footer-btn {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
 
     div.footer-btn a {
@@ -659,16 +563,13 @@ div.footer h6 {
         text-decoration: none;
         color: #f0f0f0;
         font-size: 0.9rem;
-        padding: 10px 50px;
+        padding: 10px 25px;
         border-radius: 3px;
         letter-spacing: 2px;
     }
 
     div.footer h6 {
-        text-align: center;
-        color: #88949B;
-        font-size: 1rem;
-        padding-top: 6rem;
+        padding-top: 4rem;
     }
 
 }
