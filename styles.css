@@ -528,7 +528,7 @@ div.footer h6 {
 
     div.box1 {
         padding: 10px 10px;
-        width: calc(90% - 20px);
+        width: calc(93% - 20px);
         min-width: 250px;
         margin: 5px;
         border-radius: 1px;
@@ -538,7 +538,7 @@ div.footer h6 {
     div.box3 {
         background: #304353;
         padding: 10px 10px;
-        width: calc(90% - 20px);
+        width: calc(93% - 20px);
         min-width: 250px;
         height: 250px;
         margin: 5px;
